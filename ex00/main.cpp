@@ -6,7 +6,7 @@
 /*   By: sramos <sramos@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2025/03/14 10:31:00 by sramos        #+#    #+#                 */
-/*   Updated: 2025/03/14 18:39:44 by sramos        ########   odam.nl         */
+/*   Updated: 2025/03/21 14:07:07 by sramos        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,15 +34,15 @@ int main()
 
 	std::cout << "\n*-------------------------------------------------*\n" << std::endl;
 
-	const WrongAnimal* hola = new WrongAnimal();
-	const WrongAnimal* a = new WrongCat();
+	const WrongAnimal* pet = new WrongAnimal();
+	const WrongAnimal* cat = new WrongCat();
 
-	std::cout << a->getType() << std::endl;
-	hola->makeSound();
-	a->makeSound();
+	std::cout << cat->getType() << std::endl;
+	pet->makeSound();
+	cat->makeSound();
 
-	delete(a);
-	delete(hola);
+	delete(cat);
+	delete(pet);
 
 	return 0;
 }
